@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta name="google-adsense-account" content="ca-pub-6505285417111480">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ads/ad-network.css">
+    <title>Neplytegr.cz - Profesionální webové služby</title>
+    <meta name="description" content="Hledáte někoho, kdo vám udělá web? Neplytegr.cz nabízí tvorbu webových stránek na míru, web design, SEO a dlouhodobou správu webu.">
+    <link rel="canonical" href="https://neplytegr.cz/">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:type" content="website"><meta property="og:locale" content="cs_CZ"><meta property="og:title" content="Neplytegr.cz — profesionální webové služby"><meta property="og:description" content="Tvorba webových stránek na míru, webdesign, SEO a dlouhodobá správa webu."><meta property="og:url" content="https://neplytegr.cz/">
+    <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Neplytegr.cz — profesionální webové služby"><meta name="twitter:description" content="Tvorba webů na míru, SEO a dlouhodobá správa.">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Neplytegr",
+        "alternateName": ["Neplý Tegr", "Neply Tegr", "Neplýtegr", "NeplyTegr", "Neplytegr.cz"],
+        "url": "https://neplytegr.cz/"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Neplytegr",
+        "alternateName": ["Neplý Tegr", "Neply Tegr", "Neplýtegr", "NeplyTegr", "Neplytegr.cz"],
+        "url": "https://neplytegr.cz/",
+        "email": "info@neplytegr.cz"
+    }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+            padding: 1.5rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+
+        nav a {
+            color: #b8b8b8;
+            text-decoration: none;
+            margin-left: 2.5rem;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 2rem;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(30px, 30px) rotate(180deg); }
+        }
+
+        .hero-content {
+            max-width: 900px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            letter-spacing: -2px;
+        }
+
+        .hero h1 span {
+            color: #ffd700;
+        }
+
+        .price-highlight {
+            display: inline-block;
+            background: rgba(255, 215, 0, 0.1);
+            border: 2px solid #ffd700;
+            border-radius: 8px;
+            padding: 2rem 3rem;
+            margin: 2rem 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .price-label {
+            font-size: 0.9rem;
+            color: #b8b8b8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .price-amount {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #ffd700;
+            font-family: 'Inter', sans-serif;
+            margin-bottom: 0.5rem;
+        }
+
+        .price-unit {
+            font-size: 1rem;
+            color: #b8b8b8;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #d0d0d0;
+            margin: 2rem 0;
+            line-height: 1.8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            border: none;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            color: #0a0a0a;
+            border: 2px solid #ffd700;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(255, 215, 0, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-3px);
+        }
+
+        .features {
+            max-width: 1200px;
+            margin: 6rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            color: #b8b8b8;
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: rgba(255, 215, 0, 0.05);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            border-radius: 12px;
+            padding: 2.5rem;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card:hover {
+            border-color: #ffd700;
+            background: rgba(255, 215, 0, 0.08);
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #ffd700;
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-card p {
+            color: #b8b8b8;
+            line-height: 1.8;
+            position: relative;
+            z-index: 1;
+        }
+
+        .projects-section {
+            max-width: 1200px;
+            margin: 6rem auto;
+            padding: 0 2rem;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: rgba(255, 215, 0, 0.05);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            border-color: #ffd700;
+            background: rgba(255, 215, 0, 0.08);
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            font-size: 1.5rem;
+            color: #ffd700;
+            margin-bottom: 1rem;
+        }
+
+        .project-card p {
+            color: #b8b8b8;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .project-link {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: color 0.3s;
+        }
+
+        .project-link:hover {
+            color: #ffed4e;
+        }
+
+        .project-grid {
+            grid-auto-flow: dense;
+        }
+
+        .project-featured {
+            grid-column: span 2;
+        }
+
+        @media (max-width: 800px) {
+            .project-featured {
+                grid-column: auto;
+            }
+        }
+
+        .rental-section {
+            max-width: 1200px;
+            margin: 6rem auto;
+            padding: 0 2rem;
+        }
+
+        .rental-box {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 215, 0, 0.05) 100%);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 12px;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .rental-box h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #ffd700;
+            margin-bottom: 2rem;
+        }
+
+        .rental-box p {
+            color: #d0d0d0;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .rental-ad {
+            background: rgba(255, 215, 0, 0.15);
+            border: 3px dashed rgba(255, 215, 0, 0.4);
+            border-radius: 8px;
+            padding: 4rem 2rem;
+            margin: 2rem 0;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rental-ad-text {
+            font-size: 1.3rem;
+            color: #ffd700;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .rental-contact {
+            margin-top: 2rem;
+        }
+
+        .rental-contact a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .rental-contact a:hover {
+            color: #ffed4e;
+        }
+
+        .pricing-section {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.05) 0%, rgba(255, 215, 0, 0.02) 100%);
+            padding: 6rem 2rem;
+            margin-top: 6rem;
+            border-top: 1px solid rgba(255, 215, 0, 0.1);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+        }
+
+        .pricing-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .pricing-note {
+            background: rgba(255, 215, 0, 0.15);
+            border-left: 4px solid #ffd700;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .pricing-note h4 {
+            color: #ffd700;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .pricing-note p {
+            color: #d0d0d0;
+            margin: 0;
+        }
+
+        .footer {
+            background: #000000;
+            border-top: 1px solid rgba(255, 215, 0, 0.1);
+            padding: 3rem 2rem;
+            text-align: center;
+            color: #888;
+        }
+
+        .footer p {
+            margin: 0.5rem 0;
+        }
+
+        .footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin: 1.25rem 0;
+        }
+
+        .footer .footer-social a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.45rem 1rem;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 999px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: border-color 0.2s, background 0.2s;
+        }
+
+        .footer .footer-social a:hover {
+            text-decoration: none;
+            border-color: #ffd700;
+            background: rgba(255, 215, 0, 0.08);
+        }
+
+        .footer-social svg {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .price-amount {
+                font-size: 2.5rem;
+            }
+
+            .logo {
+                font-size: 1.3rem;
+            }
+
+            nav a {
+                display: none;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        .cookie-popup {
+            position: fixed;
+            left: 16px;
+            bottom: 16px;
+            z-index: 2147483001;
+            background: rgba(20, 20, 20, 0.97);
+            border: 1px solid rgba(255, 215, 0, 0.35);
+            border-radius: 12px;
+            padding: 1rem 1.25rem;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.25s, transform 0.25s;
+        }
+
+        .cookie-popup.show {
+            opacity: 1;
+            transform: none;
+        }
+
+        .cookie-popup[hidden] {
+            display: none;
+        }
+
+        .cookie-popup p {
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .cookie-popup-buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .cookie-popup button {
+            font: inherit;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 0.4rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .cookie-accept {
+            background: #ffd700;
+            color: #0a0a0a;
+            border: 1px solid #ffd700;
+        }
+
+        .cookie-accept:hover {
+            background: #ffed4e;
+        }
+
+        .cookie-decline {
+            background: transparent;
+            color: #b8b8b8;
+            border: 1px solid #555;
+        }
+
+        .cookie-decline:hover {
+            color: #fff;
+            border-color: #888;
+        }
+
+        .cookie-rain {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 2147483002;
+        }
+
+        .cookie-rain span {
+            position: absolute;
+            top: -60px;
+            line-height: 1;
+            animation: cookie-fall linear forwards;
+        }
+
+        @keyframes cookie-fall {
+            to { transform: translateY(calc(100vh + 120px)) rotate(var(--spin)); }
+        }
+
+        @media (max-width: 540px) {
+            .cookie-popup {
+                left: 10px;
+                right: 10px;
+                bottom: auto;
+                top: 84px;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">NEPLYTEGR</div>
+            <nav>
+                <a href="#features">Služby</a>
+                <a href="#projects">Projekty</a>
+                <a href="#pricing">Ceny</a>
+                <a href="#contact">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Profesionální <span>webové řešení</span></h1>
+
+            <div class="price-highlight">
+                <div class="price-label">Konzultace a design</div>
+                <div class="price-amount">5 000 Kč</div>
+                <div class="price-unit">za minutu online schůzky</div>
+            </div>
+
+            <p>Jsme specialisté na tvorbu vysokovýkonných webových aplikací a strategie digitálního růstu. Iniciální konzultace stojí <strong>5 000 Kč za minutu</strong>. Objednejte si ji vyplněním našeho formuláře.</p>
+
+            <div class="cta-buttons">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScX4QnY5fVZqhGL-oESM7NM4eQI57LLsM8kHji8BjfpIMINKg/viewform?usp=publish-editor" class="btn btn-primary" target="_blank">Objednat konzultaci</a>
+                <a href="https://neplytegr.cz/info" class="btn btn-secondary">Více informací</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h2 class="section-title">Naše služby</h2>
+        <p class="section-subtitle">Komplexní řešení pro váš digitální úspěch</p>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Web design</h3>
+                <p>Moderní, funkční a krásný design vašeho webu vytvoříme s ohledem na UX a konverze.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⚙️</div>
+                <h3>Vývoj webu</h3>
+                <p>Profesionální vývoj s nejnovějšími technologiemi. React, Node.js, Python - cokoliv potřebujete.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3>SEO optimalizace</h3>
+                <p>Zvýšíme vaši viditelnost v Google a ostatních vyhledávačích. Organický růst přenosů zaručen.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Strategie</h3>
+                <p>Digitální strategie tailored na váš byznys model. Analýza trhu, konkurence a optimální cesta vpřed.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Mobilní řešení</h3>
+                <p>Responzivní design a native aplikace pro iOS a Android. Váš web bude perfektní všude.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🔧</div>
+                <h3>Údržba & support</h3>
+                <p>Dlouhodobá podpora vašeho webu. Aktualizace, bezpečnost a optimalizace bez starostí.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <h2 class="section-title">Naše projekty</h2>
+        <p class="section-subtitle">Weby a aplikace které jsme vyvinuli</p>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>NeplyTegrOS</h3>
+                <p>Otevři herní mobil, stáhni si aplikace a prozkoumej web přímo z jeho plochy.</p>
+                <a href="./" class="project-link">Spustit mobil</a>
+            </div>
+            <div class="project-card">
+                <h3>Sondy</h3>
+                <p>Největší Česká firma zaměřena na vývoj nejlepších a nejlevnějších vibračních análních sond v celé Evropě.</p>
+                <a href="https://neplytegr.cz/sondy/index.html" class="project-link">Zobrazit projekt →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>NeplyTegr kasino</h3>
+                <p>Kasino, údaje kreditních karet zasílame do Číny a Izraelu. Prohrávejte rychleji, a prodávejte data s úsměvem.</p>
+                <a href="https://neplytegr.cz/kasino/index.html" class="project-link">Zobrazit projekt →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Detektor lži</h3>
+                <p>Zjistěte, zda je váš výrok pravdivý. Rychle, jednoduše a bez zbytečných otázek.</p>
+                <a href="detektor/index.html" class="project-link">Zobrazit projekt →</a>
+            </div>
+
+            <div class="project-card project-featured">
+                <h3>Hard Steel War</h3>
+                <p>Tankové bitvy, ve kterých rozhoduje ocel, pancíř a muška. Vyber si stroj, vyjeď na bojiště a ukaž, kdo tu velí.</p>
+                <a href="https://hsw.neplytegr.cz" class="project-link" target="_blank" rel="noopener">Do boje →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Brzy další</h3>
+                <p>Připravujeme další projekty. Sledujte tento prostor pro nové a zajímavé řešení, která vyvíjíme pro naše klienty.</p>
+                <a href="#contact" class="project-link">Kontaktujte nás →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="rental-section">
+        <div class="rental-box">
+            <h2>Pronajměte si toto místo!</h2>
+            <p>Pronajmete si reklamní místo na vysoce navštěvovaném webu Neplytegr.cz s obřím prostorem pro vaši reklamu.</p>
+
+            <div class="rental-ad">
+                <div class="rental-ad-text">
+                    Pronajmete si toto místo na:<br>
+                  <a href="https://neplytegr.cz/pronajem" style="color: #ffd700; text-decoration: none;">
+                    <strong>neplytegr.cz/pronajem</strong>
+                </a>
+                </div>
+            </div>
+
+            <p><strong>Cena: 50 000 Kč za jeden den</strong></p>
+
+            <div class="rental-contact">
+                <p>Máte zájem? Napište nám na <a href="mailto:info@neplytegr.cz">info@neplytegr.cz</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section" id="pricing">
+        <div class="pricing-content">
+            <h2 class="section-title">Jak fungují naše ceny</h2>
+            <p class="section-subtitle">Transparentní ceník pro vaši jistotu</p>
+
+            <div class="pricing-note">
+                <h4>💼 Model ocenění</h4>
+                <p>Všechny konzultace včetně iniciální stojí <strong>5 000 Kč za minutu</strong>. Nejdřív je potřeba vyplnit formulář a odsouhlasit si termín schůzky. Přesná cena projektu a časový odhad dostanete po schůzce, kdy probereme vaše požadavky a cíle.</p>
+            </div>
+
+            <div class="pricing-note">
+                <h4>✅ Proces</h4>
+                <p>1. Vyplníte formulář – sjednotíme si detaily a termín. 2. Iniciální konzultace (5 000 Kč/min) – probereme váš projekt. 3. Kalkulace – vám bude sdělena přesná cena. 4. Realizace – plný profesionální servis. 5. Podpora – po dokončení jsme tu pro vás.</p>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScX4QnY5fVZqhGL-oESM7NM4eQI57LLsM8kHji8BjfpIMINKg/viewform?usp=publish-editor" class="btn btn-primary" target="_blank">Objednat schůzku</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <p><strong>Neplytegr.cz</strong> – Profesionální webové služby</p>
+        <p>📧 <a href="mailto:info@neplytegr.cz">info@neplytegr.cz</a></p>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/neplytegr.cz/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.25"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+                Instagram
+            </a>
+            <a href="https://www.tiktok.com/@neplytegr.cz" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                TikTok
+            </a>
+        </div>
+        <p>Vysoká kvalita, férové ceny, spolehlivost</p>
+        <p style="color: #555; margin-top: 2rem;">© 2026 Neplytegr.cz. Všechna práva vyhrazena.</p>
+    </footer>
+
+    <div class="cookie-popup" id="cookiePopup" role="dialog" aria-label="Cookies" hidden>
+        <p>🍪 Chcete cookies?</p>
+        <div class="cookie-popup-buttons">
+            <button type="button" class="cookie-accept" id="cookieAccept">Ano</button>
+            <button type="button" class="cookie-decline" id="cookieDecline">Ne</button>
+        </div>
+    </div>
+    <script>
+        (function () {
+            var KEY = 'neplytegr-cookies';
+            var popup = document.getElementById('cookiePopup');
+            var answered = null;
+            try { answered = localStorage.getItem(KEY); } catch (e) {}
+            if (answered) return;
+
+            setTimeout(function () {
+                popup.hidden = false;
+                requestAnimationFrame(function () { popup.classList.add('show'); });
+            }, 800);
+
+            function close(answer) {
+                try { localStorage.setItem(KEY, answer); } catch (e) {}
+                popup.classList.remove('show');
+                setTimeout(function () { popup.hidden = true; }, 250);
+            }
+
+            function rain() {
+                var box = document.createElement('div');
+                box.className = 'cookie-rain';
+                var longest = 0;
+                for (var i = 0; i < 70; i++) {
+                    var c = document.createElement('span');
+                    var duration = 2.5 + Math.random() * 2.5;
+                    var delay = Math.random() * 2;
+                    longest = Math.max(longest, duration + delay);
+                    c.textContent = '🍪';
+                    c.style.left = (Math.random() * 100) + 'vw';
+                    c.style.fontSize = (18 + Math.random() * 30) + 'px';
+                    c.style.animationDuration = duration + 's';
+                    c.style.animationDelay = delay + 's';
+                    c.style.setProperty('--spin', ((Math.random() * 2 - 1) * 720) + 'deg');
+                    box.appendChild(c);
+                }
+                document.body.appendChild(box);
+                setTimeout(function () { box.remove(); }, longest * 1000 + 200);
+            }
+
+            document.getElementById('cookieAccept').addEventListener('click', function () {
+                close('accepted');
+                rain();
+            });
+            document.getElementById('cookieDecline').addEventListener('click', function () {
+                close('declined');
+            });
+        })();
+    </script>
+    <script src="ads/ad-network.js" defer></script>
+</body>
+</html>

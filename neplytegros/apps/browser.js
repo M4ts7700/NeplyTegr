@@ -22,7 +22,7 @@ phoneApps.set('browser', body => {
         }
         window.open(url.href, '_blank', 'noopener,noreferrer');
     };
-    const paths = ['info.html', 'detektor/index.html'];
+    const paths = ['../info.html', '../detektor/index.html'];
     const reader = body.querySelector('.reader');
     body.querySelectorAll('.bookmark').forEach((button, index) => {
         button.onclick = () => {
